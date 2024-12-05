@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
   // Launch the browser
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
 
   // Go to the URL
